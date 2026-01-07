@@ -15,5 +15,6 @@ jobs:
     - name: Secret Scanning
       uses: trufflesecurity/trufflehog@main
       with:
+        path: /home/runner
         extra_args: --results=verified,unknown
     # Scan for secrets  
