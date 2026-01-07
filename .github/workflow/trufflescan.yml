@@ -1,0 +1,12 @@
+on: push
+
+job:
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+    # Fetch Repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+    # Scan for secrets  
+      - name: TruffleHog OSS
+        uses: trufflesecurity/trufflehog@v3.92.4
