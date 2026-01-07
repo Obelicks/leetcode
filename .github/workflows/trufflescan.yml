@@ -1,6 +1,7 @@
-on: push
+on: 
+  push
 
-job:
+jobs:
   secret-scan:
     runs-on: ubuntu-latest
     steps:
